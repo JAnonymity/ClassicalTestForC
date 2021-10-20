@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-//5.输入若干学生的一门课成绩，统计并输出最高成绩和最低成绩及相应的序号
-
+//5.输入若干学生的一门课成绩，统计并输出最高成绩和最低成绩及相应的序号，以及平均分
+double sum=0;
 
 void Print_ScoreandNumber(double score[],int num)
 {
@@ -19,11 +19,14 @@ void Print_ScoreandNumber(double score[],int num)
 			min=score[i];
 			min_pos=i;
 		}
+		sum+=score[i];
 	}
 	
 	printf("NO.%d is maxscore=%.2lf\n",max_pos,max);
 	printf("NO.%d is minscore=%.2lf\n",min_pos,min);
+	printf("average=%.2lf\n",sum/num);
 }
+
 
 void main()
 {
