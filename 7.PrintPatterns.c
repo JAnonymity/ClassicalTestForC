@@ -5,6 +5,11 @@
 //  ***
 // *****
 //*******
+//*
+//**
+//***
+//****
+
 void main()
 {
 	int rows=0,spaces=0,stars=0;
@@ -23,4 +28,13 @@ void main()
 		
 		printf("\n");
 	}
+	for (int rows = 1; rows <= 4; rows++)
+    	{
+		for (int stars = 0; stars < rows; stars++)
+		{
+		    printf("*");
+		}
+		printf("\n");
+    	}
 }
+
