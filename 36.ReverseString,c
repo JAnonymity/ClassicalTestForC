@@ -1,0 +1,26 @@
+//编写一个程序，使输入的一个字符串按反序存放在一字符数组中
+
+void reverse(char str[],int left, int right)
+{
+
+	while (left<right)
+	{
+		char temp = str[left];
+		str[left] = str[right];
+		str[right] = temp;
+		left++;
+		right--;
+	}
+}
+
+void main()
+{
+	char str[] = "!brepus era uoY";
+	int len = strlen(str);
+	
+	puts(str);
+
+	reverse(str, 0, len - 1);
+
+	puts(str);
+}
